@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Valutaomvandlare</string>
+    <string name="convert_button">Omvandla</string>
+    <string name="result">"$convertedValue"</string>
+    <string name="hint_text">0.00</string>
+
+    <string-array name="currencies">
+        <item>SEK</item>
+        <item>EUR</item>
+        <item>DKK</item>
+        <item>NOK</item>
+        <item>GBP</item>
+        <item>PLN</item>
+        <item>USD</item>
+        <item>AUD</item>
+    </string-array>
+</resources>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/background_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/main_background2"
+        android:scaleType="centerCrop" />
+
+
+
+    <EditText
+        android:id="@+id/input_edit_text"
+        android:layout_width="348dp"
+        android:layout_height="118dp"
+        android:layout_marginBottom="420dp"
+        android:alpha="0.5"
+        android:background="#D7E3E3"
+        android:backgroundTint="#C3D5F4"
+        android:hint="@string/hint_text"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textColorHighlight="#000000"
+        android:textColorHint="#000000"
+        android:textColorLink="#701616"
+        android:textSize="60sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:cornerRadius="80dp"
+
+        tools:ignore="LabelFor" />
+
+    <Spinner
+        android:id="@+id/to_spinner"
+        android:layout_width="154dp"
+        android:layout_height="60dp"
+        android:background="#9491C8"
+        android:backgroundTint="#7087A8"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/result_text_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.875"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/input_edit_text" />
+
+    <Spinner
+        android:id="@+id/from_spinner"
+        android:layout_width="154dp"
+        android:layout_height="60dp"
+        android:background="#9491C8"
+        android:backgroundTint="#7087A8"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/result_text_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.12"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/input_edit_text" />
+
+    <TextView
+        android:id="@+id/result_text_view"
+        android:layout_width="348dp"
+        android:layout_height="118dp"
+        android:layout_marginTop="116dp"
+        android:alpha="0.7"
+        android:background="#D7E3E3"
+        android:backgroundTint="#C3D5F4"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textColorHighlight="#000000"
+        android:textColorHint="#000000"
+        android:textColorLink="#701616"
+        android:textSize="60sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/input_edit_text" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="344dp"
+        android:layout_height="55dp"
+        android:text="@string/app_name"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#684646"
+        android:textSize="34sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/input_edit_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/convert_button"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#8091B3"
+        android:text="@string/convert_button"
+        android:textColor="#000000"
+        app:iconTint="#D1E1E4"
+        app:iconTintMode="add"
+        app:layout_constraintBottom_toBottomOf="@+id/background_image"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/result_text_view" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
